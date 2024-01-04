@@ -52,7 +52,7 @@
     return 0;
 } */
 
-// Write a Program to calculate Simple Interest. Formula: S.I = (P*R*T) /100 
+// Write a Program to calculate Simple Interest. Formula: S.I = (P*R*T) /100
 /* int main() {
     int principal, time, n;
     double rate;
@@ -73,7 +73,7 @@
     return 0;
 } */
 
-// Write a Program to calculate Compound Interest. 
+// Write a Program to calculate Compound Interest.
 // Formula: Amount= P(1 + R/100)^t
 /* int main() {
     int principal = 0, time = 0;
@@ -123,7 +123,7 @@
     case 0:
         printf("%d is an even number", number);
         break;
-    
+
     case 1:
         printf("%d is an odd number", number);
         break;
@@ -131,3 +131,84 @@
 
     return 0;
 } */
+
+// Write a Program to find the largest number among three numbers.
+/* int main() {
+
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int num[3];
+    int max = 0;
+
+    printf("Enter three values: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    num[0] = a;
+    num[1] = b;
+    num[2] = c;
+
+    for(int i = 0; i < 3; i++) {
+        if (num[i] > max) {
+            max = num[i];
+        }
+    }
+
+    printf("The largest number is: %d", max);
+
+    return 0;
+} */
+
+// Write a Program to make a simple calculator.
+int main()
+{
+
+    int a = 0;
+    int b = 0;
+    char c = ' ';
+
+    while (c != 'x')
+    {
+        printf("Enter an operator (*, +, -, /)"
+               "Enter x to quit: ");
+        scanf("%c", &c);
+
+        if (c == 'x') {
+            break;
+        }
+
+        getchar();
+
+        printf("Enter first operand: ");
+        scanf("%d", &a);
+
+        printf("Enter second operand: ");
+        scanf("%d", &b);
+
+        switch (c)
+        {
+        case '*':
+            printf("%d * %d = %d\n", a, b, a * b);
+            break;
+        case '+':
+            printf("%d + %d = %d\n", a, b, a + b);
+            break;
+        case '-':
+            printf("%d - %d = %d\n", a, b, a - b);
+            break;
+        case '/':
+             if (b != 0) {
+                    printf("%d / %d = %d\n", a, b, a / b);
+                } else {
+                    printf("Division by zero is undefined.\n");
+                }
+                break;
+
+        default:
+            printf("You did not input a valid operator\n");
+            break;
+        }
+    }
+
+    return 0;
+}
