@@ -160,7 +160,7 @@
 } */
 
 // Write a Program to make a simple calculator.
-int main()
+/* int main()
 {
 
     int a = 0;
@@ -211,4 +211,28 @@ int main()
     }
 
     return 0;
-}
+} */
+
+// Write a Program to find the factorial of a given number.
+/* int main() {
+
+    int number = 0;
+    int factorial = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    int count = number - 1;
+    // printf("number: %d", number);
+
+    for (int i = 0; i < count; i++) {
+        factorial *= number--;
+
+        // printf("number: %d\n", number);
+        // printf("number: %d\n", factorial);
+    }
+
+    printf("The factorial of %d is: %d", number, factorial);
+
+    return 0;
+} */
