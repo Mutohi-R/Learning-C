@@ -214,7 +214,7 @@
 } */
 
 // Write a Program to find the factorial of a given number.
-/* int main() {
+int main() {
 
     int number = 0;
     int factorial = 1;
@@ -235,4 +235,4 @@
     printf("The factorial of %d is: %d", number, factorial);
 
     return 0;
-} */
+}
