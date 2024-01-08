@@ -222,17 +222,22 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &number);
 
-    int count = number - 1;
-    // printf("number: %d", number);
 
-    for (int i = 0; i < count; i++) {
-        factorial *= number--;
+    if (number <= 0) {
+        printf("Cant find the factorial of a number less than or equal to 0");
+    } else {
+        int count = number - 1;
+        // printf("number: %d", number);
 
-        // printf("number: %d\n", number);
-        // printf("number: %d\n", factorial);
+        for (int i = 0; i < count; i++) {
+            factorial *= number--;
+
+            // printf("number: %d\n", number);
+            // printf("number: %d\n", factorial);
+        }
+
+        printf("The factorial of %d is: %d", number, factorial);
     }
-
-    printf("The factorial of %d is: %d", number, factorial);
 
     return 0;
 }
