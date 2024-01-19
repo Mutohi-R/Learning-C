@@ -24,7 +24,7 @@ int main () {
     }
 
     if (!found_non_repeating) {
-        printf("no non-repeating element found\n")
+        printf("no non-repeating element found\n");
     }
 
     return 0;
